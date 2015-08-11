@@ -1,0 +1,44 @@
+ul li img {
+  width: 200px
+}
+
+img{
+  margin-left: 5%;
+  width: 35%;
+}
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-caption {
+  right: 10%;
+  left: 45%;
+  text-align: left;
+  top: 10%;
+  bottom: 5%;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  color: black;
+}
+
+.carousel-caption > h1 {
+  position: absolute;
+  bottom: 10px;
+}
+
+.carousel-caption > h2 {
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel-caption > h3, h4 {
+  font-weight: 400;
+}
+
+.modal {
+  top: 20%;
+}
+
+.modal-footer {
+  text-align: center;
+}
