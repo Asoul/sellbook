@@ -2,7 +2,7 @@ var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate'])
 
 app.controller('BookCarouselCtrl', function ($scope, $http) {
   
-  $scope.myInterval = 5000000;
+  $scope.myInterval = 5000;
   $scope.books = []
 
   $scope.load = function() {
