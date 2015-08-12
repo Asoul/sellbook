@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
 body {
-  font-family: Noto Sans, 'cwTeXHei', Noto, sans, sans-serif;
+  font-family: "Noto Sans", 'cwTeXHei', "Noto", sans, sans-serif;
 }
 
 .carousel-indicators {
@@ -26,6 +26,9 @@ body {
   position: absolute;
   bottom: 0;
   font-size: 3vmax;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .carousel-caption h2 {
@@ -69,9 +72,6 @@ img{
   }
   .carousel-caption h1 {
     right: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    border-radius: 3px;
   }
   .modal {
     top: 5%;
