@@ -2,7 +2,7 @@ var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate'])
 
 app.controller('BookCarouselCtrl', function ($scope, $http) {
   
-  $scope.myInterval = 5000;
+  $scope.myInterval = 5000000;
   $scope.books = []
 
   $scope.load = function() {
@@ -24,7 +24,11 @@ app.controller('BookCarouselCtrl', function ($scope, $http) {
           comment: books[i].gsx$註解.$t,
           buyDate: books[i].gsx$購入日期.$t,
           buySource: books[i].gsx$購入管道.$t,
-          link: 'http://www.books.com.tw/products/' + bookID
+          link: 'http://www.books.com.tw/products/' + bookID,
+          greenLabel: books[i].gsx$greenlabel.$t,
+          blueLabel: books[i].gsx$bluelabel.$t,
+          orangeLabel: books[i].gsx$orangelabel.$t,
+          redLabel: books[i].gsx$redlabel.$t
         })
       }
     })

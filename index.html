@@ -8,7 +8,7 @@
 
   <meta property="og:title" content="立群好朋友的很新二手書" />
   <meta property="og:type" content="article" />
-  <meta property="og:image" content="http://asoul.github.io/sellbook/favicon.ico" />
+  <meta property="og:image" content="http://asoul.github.io/sellbook/img/ogimage.jpg" />
   <meta property="og:url" content="http://asoul.github.io/sellbook/" />
   <meta property="og:description" content="簡單來說就很新的二手書打六折賣" />
 
@@ -45,6 +45,7 @@
         <img ng-src="{{book.image}}">
         <div class="carousel-caption">
           <div class="hidden-xs">
+            <h2><span class="label label-success">{{book.greenLabel}}</span>&nbsp;<span class="label label-info">{{book.blueLabel}}</span>&nbsp;<span class="label label-warning">{{book.orangeLabel}}</span>&nbsp;<span class="label label-danger">{{book.redLabel}}</span></h2>
             <h2>{{book.title}}</h2>
             <hr /> 
             <h4>作者: {{book.author}}</h4>
@@ -53,6 +54,7 @@
             <h4>博客來連結: <a href="{{book.link}}" target="_blank"><span class="glyphicon glyphicon-search"></span></a></h4>
             <hr />
             <h4>註解: {{book.comment}}</h4>  
+            <hr />
           </div>
           
           <h1><strike>原價: {{book.originPrice}}</strike>&nbsp;&nbsp;朋友價: {{book.price}}&nbsp;&nbsp;<span class="label label-danger">{{book.discount}}% Off!</span></h1>
