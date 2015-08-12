@@ -4,6 +4,14 @@ body {
   font-family: "Microsoft JhengHei", 'cwTeXHei', sans, sans-serif;
 }
 
+#element::-webkit-scrollbar { 
+    display: none; 
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 .carousel-indicators {
   display: none;
 }
