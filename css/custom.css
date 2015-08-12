@@ -61,4 +61,7 @@ img{
     padding: 5px;
     border-radius: 5px;
   }
+  .modal {
+    top: 5%;
+  }
 }
