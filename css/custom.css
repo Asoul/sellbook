@@ -1,8 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 
 body {
-  font-family: "Noto Sans", 'cwTeXHei', "Noto", sans, sans-serif;
+  font-family: "Microsoft JhengHei", 'cwTeXHei', sans, sans-serif;
 }
 
 .carousel-indicators {
