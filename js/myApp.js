@@ -6,6 +6,7 @@ app.controller('BookCarouselCtrl', function ($scope, $http) {
   $scope.books = []
 
   $scope.load = function() {
+    $scope.loadEnd = false
     $http.get('https://spreadsheets.google.com/feeds/list/1FjiemWDOuEpE00c0mA1L_WMgB4_WoDfIAp9GHVylOQE/od6/public/values?alt=json')
     .success(function (response) {
       books = response.feed.entry
@@ -31,6 +32,9 @@ app.controller('BookCarouselCtrl', function ($scope, $http) {
           redLabel: books[i].gsx$redlabel.$t
         })
       }
+
+      $scope.loadingDivStyle = {'display': 'none'}
+      $scope.contentStyle = {'opacity': '1'}
     })
   }
 
